@@ -30,24 +30,56 @@ private:
 
 	stackContainer* headStack;
 
+	listContainer* tailList;
+
+	deckContainer* tailDeck;
+
+	stackContainer* tailStack;
+
 public:
+	keeper();
+
+	~keeper();
+
+	void push(list _data);
+
+	void push(stack _data);
+
+	void push(deck _data);
+
 	listContainer* getHeadList();
 
 	deckContainer* getHeadDeck();
 
 	stackContainer* getHeadStack();
 
-	void setHead(listContainer* head);
+	listContainer* getTailList();
 
-	void setHead(deckContainer* head);
+	deckContainer* getTailDeck();
 
-	void setHead(stackContainer* head);
+	stackContainer* getTailStack();
+
+	listContainer* selectElemList(int index);
+
+	deckContainer* selectElemDeck(int index);
+
+	stackContainer* selectElemStack(int index);
+
+	void setHeadList(listContainer* head);
+
+	void setHeadDeck(deckContainer* head);
+
+	void setHeadStack(stackContainer* head);
+
+	void setTailList(listContainer* tail);
+
+	void setTailDeck(deckContainer* tail);
+
+	void setTailStack(stackContainer* tail);
 
 	void writeContainer(listContainer* head);
 
 	void writeContainer(deckContainer* head);
 
 	void writeContainer(stackContainer* head);
-
-	void readContainer();
 };

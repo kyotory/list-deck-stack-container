@@ -2,14 +2,8 @@
   deck.cpp
   deck.h
   keeper.cpp
-C:\Users\slava\source\repos\Technology of Programming 5\Technology of Programming 5\keeper.h(18,8): warning C4624: "stackContainer": деструктор неявно определен как удаленный
-  (компиляция исходного файла "keeper.cpp")
-  
   list.cpp
   main.cpp
-C:\Users\slava\source\repos\Technology of Programming 5\Technology of Programming 5\keeper.h(18,8): warning C4624: "stackContainer": деструктор неявно определен как удаленный
-  (компиляция исходного файла "main.cpp")
-  
   stack.cpp
   Создание кода...
 x64\Debug\deck.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются

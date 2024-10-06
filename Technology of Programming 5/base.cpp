@@ -25,5 +25,10 @@ void queue::setTail(Node* a)
 
 void queue::printData()
 {
-
+	Node* temp = head;
+	while (temp != nullptr)
+	{
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
 }

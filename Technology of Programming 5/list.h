@@ -8,11 +8,11 @@ public:
 
 	list(int n);
 
-	list(const list& other);
+	list(list& other);
 
 	~list();
 
-	void push(int data, int index);
+	void push(int _data, int index);
 
 	void pop(int index);
 };

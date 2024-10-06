@@ -53,6 +53,8 @@ void mainMenuStack()
 
 int main()
 {
+    keeper container; deckContainer* deckptr = nullptr; stackContainer* stackptr = nullptr; listContainer* listptr = nullptr;
+
     mainMenu();
 
     char actionMainMenu = _getch();
@@ -72,6 +74,35 @@ int main()
                 {
                 case '1':
                 {
+                    system("cls");
+                    if (container.getHeadDeck() == nullptr) 
+                    {
+                        cout << "There are no decks in the container\n\nTry to create new deck\n\n";
+                    }
+                    else
+                    {
+                        int number = 0; deckContainer* temp = container.getHeadDeck();
+                        while (temp != nullptr)
+                        {
+                            cout << "Deck #" << number << " -> ";
+                            temp->data.printData();
+                            number++;
+                            temp = temp->next;
+                            cout << "\n\n";
+                        }
+                        cout << "What deck do you want to choose?\n\n";
+                        int index = 0;
+                        cin >> index;
+                        if (index >= number)
+                        {
+                            cout << "\nWrite a correct index to choose a deck\n\n";
+                        }
+                        else
+                        {
+                            deckptr = container.selectElemDeck(index);
+                            cout << "\nYou have chosen a deck #" << index << "\n\n";
+                        }
+                    }
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -79,6 +110,11 @@ int main()
                 }
                 case '2':
                 {
+                    system("cls");
+                    deck* newNode = new deck;
+                    container.push(*newNode);
+                    deckptr = container.selectElemDeck(0);
+                    cout << "New deck has completely created";
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -86,6 +122,19 @@ int main()
                 }
                 case '3':
                 {
+                    system("cls");
+                    if (deckptr == nullptr)
+                    {
+                        cout << "You should choose a deck to push a front element to the deck" << endl << endl;
+                    }
+                    else
+                    {
+                        int temp;
+                        cout << "Write an amount of the element" << endl << endl;
+                        cin >> temp;
+                        deckptr->data.pushFront(temp);
+                        cout << "\nElement has succesfully pushed to the front of the deck" << endl << endl;
+                    }
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -93,6 +142,15 @@ int main()
                 }
                 case '4':
                 {
+                    system("cls");
+                    if (deckptr == nullptr)
+                    {
+                        cout << "You should choose a deck to pop a front element from the deck" << endl << endl;
+                    }
+                    else
+                    {
+                        deckptr->data.popFront();
+                    }
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -100,6 +158,19 @@ int main()
                 }
                 case '5':
                 {
+                    system("cls");
+                    if (deckptr == nullptr)
+                    {
+                        cout << "You should choose a deck to push a back element to the deck" << endl << endl;
+                    }
+                    else
+                    {
+                        int temp;
+                        cout << "Write an amount of the element" << endl << endl;
+                        cin >> temp;
+                        deckptr->data.pushBack(temp);
+                        cout << "\nElement has succesfully pushed to the back of the deck" << endl << endl;
+                    }
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -107,6 +178,15 @@ int main()
                 }
                 case '6':
                 {
+                    system("cls");
+                    if (deckptr == nullptr)
+                    {
+                        cout << "You should choose a deck to pop a back element from the deck" << endl << endl;
+                    }
+                    else
+                    {
+                        deckptr->data.popBack();
+                    }
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -121,6 +201,24 @@ int main()
                 }
                 case '8':
                 {
+                    system("cls");
+                    if (container.getHeadDeck() == nullptr)
+                    {
+                        cout << "There are no decks in the container\n\nTry to create new deck\n\n";
+                    }
+                    else
+                    {
+                        cout << "All decks that you have in the container:\n\n";
+                        int number = 0; deckContainer* temp = container.getHeadDeck();
+                        while (temp != nullptr)
+                        {
+                            cout << "Deck #" << number << " -> ";
+                            temp->data.printData();
+                            number++;
+                            temp = temp->next;
+                            cout << "\n\n";
+                        }
+                    }
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -136,6 +234,7 @@ int main()
                     break;
                 }
                 }
+                actionDeckMenu = _getch();
             }
             system("cls");
             mainMenu();
@@ -202,6 +301,7 @@ int main()
                     break;
                 }
                 }
+                actionListMenu = _getch();
             }
             system("cls");
             mainMenu();
@@ -268,6 +368,7 @@ int main()
                     break;
                 }
                 }
+                actionStackMenu = _getch();
             }
             system("cls");
             mainMenu();

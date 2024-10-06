@@ -8,15 +8,15 @@ public:
 
 	deck(int n);
 
-	deck(const deck& other);
+	deck(deck& other);
 
 	~deck();
 
-	void pushFront(int data);
+	void pushFront(int _data);
 
 	void popFront();
 
-	void pushBack(int data);
+	void pushBack(int _data);
 
 	void popBack();
 };
