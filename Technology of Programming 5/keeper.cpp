@@ -43,6 +43,10 @@ keeper::keeper()
 
 		while (getline(deckFile, line)) cnt++;
 
+		if (deckFile.eof() && line.empty()) {
+			cnt++;
+		}
+
 		deckContainer* prevNodeDeck = nullptr;
 
 		for (int i = 0; i < cnt; i++)
@@ -111,6 +115,10 @@ keeper::keeper()
 
 		while (getline(stackFile, line)) cnt++;
 
+		if (stackFile.eof() && line.empty()) {
+			cnt++;
+		}
+
 		stackContainer* prevNodeStack = nullptr;
 
 		for (int i = 0; i < cnt; i++)
@@ -178,6 +186,10 @@ keeper::keeper()
 		string line; int cnt = 0;
 
 		while (getline(listFile, line)) cnt++;
+
+		if (listFile.eof() && line.empty()) {
+			cnt++;
+		}
 
 		listContainer* prevNodeList = nullptr;
 

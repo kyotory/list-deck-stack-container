@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\keeper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\keeper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\keeper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\keeper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,22 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "keeper.h",
-              "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\keeper.h",
-              "RelativeDocumentMoniker": "Technology of Programming 5\\keeper.h",
-              "ToolTip": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\keeper.h",
-              "RelativeToolTip": "Technology of Programming 5\\keeper.h",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-06T10:52:37.182Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
@@ -50,22 +28,9 @@
               "RelativeDocumentMoniker": "Technology of Programming 5\\main.cpp",
               "ToolTip": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\main.cpp",
               "RelativeToolTip": "Technology of Programming 5\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-09T10:33:34.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "keeper.cpp",
-              "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\keeper.cpp",
-              "RelativeDocumentMoniker": "Technology of Programming 5\\keeper.cpp",
-              "ToolTip": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\keeper.cpp",
-              "RelativeToolTip": "Technology of Programming 5\\keeper.cpp",
-              "ViewState": "AgIAAEwCAAAAAAAAAAAswIQCAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-06T10:36:57.988Z",
+              "WhenOpened": "2024-10-09T12:32:13.775Z",
               "EditorCaption": ""
             }
           ]

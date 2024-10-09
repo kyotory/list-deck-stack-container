@@ -233,6 +233,7 @@ int main()
                 {
                     system("cls");
                     container.popDeck(deckptr);
+                    deckptr = nullptr;
                     actionDeckMenu = _getch();
                     system("cls");
                     mainMenuDeck();
@@ -390,6 +391,7 @@ int main()
                 {
                     system("cls");
                     container.popList(listptr);
+                    listptr = nullptr;
                     actionListMenu = _getch();
                     system("cls");
                     mainMenuList();
@@ -542,6 +544,7 @@ int main()
                 {
                     system("cls");
                     container.popStack(stackptr);
+                    stackptr = nullptr;
                     actionStackMenu = _getch();
                     system("cls");
                     mainMenuStack();
