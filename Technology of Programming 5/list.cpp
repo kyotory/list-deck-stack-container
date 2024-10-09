@@ -130,7 +130,7 @@ void list::pop(int index)
 {
 	if (index < 0)
 	{
-		cout << "Incorrect index" << endl << endl;
+		cout << "\nIncorrect index" << endl << endl;
 		return;
 	}
 
@@ -138,7 +138,7 @@ void list::pop(int index)
 
 	if (temp == nullptr)
 	{
-		cout << "No elements for deleting";
+		cout << "\nNo elements for deleting";
 		return;
 	}
 
@@ -146,6 +146,7 @@ void list::pop(int index)
 	{
 		delete(temp);
 		setHead(nullptr); setTail(nullptr);
+		cout << "\nElement has succesfully popped from the list" << endl << endl;
 		return;
 	}
 
@@ -161,6 +162,7 @@ void list::pop(int index)
 		Node* memFree = getHead();
 		setHead(memFree->next);
 		delete(memFree);
+		cout << "\nElement has succesfully popped from the list" << endl << endl;
 		return;
 	}
 
@@ -174,6 +176,8 @@ void list::pop(int index)
 		}
 		delete(temp);
 		setTail(tempPrev);
+		tempPrev->next = nullptr;
+		cout << "\nElement has succesfully popped from the list" << endl << endl;
 		return;
 	}
 
@@ -187,4 +191,5 @@ void list::pop(int index)
 
 	tempPrev->next = temp->next;
 	delete(temp);
+	cout << "\nElement has succesfully popped from the list" << endl << endl;
 }

@@ -104,9 +104,11 @@ void stack::pop()
 	{
 		delete(temp);
 		setHead(nullptr); setTail(nullptr);
+		cout << "Element has succesfully popped from the stack" << endl << endl;
 		return;
 	}
 
 	setHead(getHead()->next);
 	delete(temp);
+	cout << "Element has succesfully popped from the stack" << endl << endl;
 }

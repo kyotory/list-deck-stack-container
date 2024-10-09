@@ -47,6 +47,12 @@ public:
 
 	void push(deck _data);
 
+	void popList(listContainer* aim);
+
+	void popStack(stackContainer* aim);
+
+	void popDeck(deckContainer* aim);
+
 	listContainer* getHeadList();
 
 	deckContainer* getHeadDeck();
@@ -77,9 +83,9 @@ public:
 
 	void setTailStack(stackContainer* tail);
 
-	void writeContainer(listContainer* head);
+	void writeContainer(deckContainer* deckptr);
 
-	void writeContainer(deckContainer* head);
+	void writeContainer(stackContainer* stackptr);
 
-	void writeContainer(stackContainer* head);
+	void writeContainer(listContainer* listptr);
 };
