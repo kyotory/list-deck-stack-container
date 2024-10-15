@@ -21,9 +21,6 @@
     <ClCompile Include="deck.h">
       <Filter>Файлы заголовков</Filter>
     </ClCompile>
-    <ClCompile Include="base.cpp">
-      <Filter>Исходные файлы</Filter>
-    </ClCompile>
     <ClCompile Include="deck.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
@@ -52,8 +49,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="deck.txt" />
-    <Text Include="stack.txt" />
-    <Text Include="list.txt" />
+    <Text Include="database.txt" />
   </ItemGroup>
 </Project>

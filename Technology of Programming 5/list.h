@@ -1,5 +1,5 @@
-#include "base.h"
 #pragma once
+#include "base.h"
 
 class list : public queue
 {
@@ -12,7 +12,19 @@ public:
 
 	~list();
 
-	void push(int _data, int index);
+	Node* getHead() override;
 
-	void pop(int index);
+	Node* getTail() override;
+
+	void setHead(Node* a) override;
+
+	void setTail(Node* a) override;
+
+	void printData() override;
+
+	void push(int data) override;
+
+	void pop() override;
+
+	void writeToFile(fstream& fileDatabase) override;
 };

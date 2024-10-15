@@ -12,7 +12,19 @@ public:
 
 	~stack();
 
-	void push(int _data);
+	Node* getHead() override;
 
-	void pop();
+	Node* getTail() override;
+
+	void setHead(Node* a) override;
+
+	void setTail(Node* a) override;
+
+	void printData() override;
+
+	void push(int data) override;
+
+	void pop() override;
+
+	void writeToFile(fstream& fileDatabase) override;
 };

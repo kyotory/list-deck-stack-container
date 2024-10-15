@@ -2,90 +2,44 @@
 #include "list.h"
 #include "stack.h"
 #include "deck.h"
+#include <fstream>
 
-struct listContainer
-{
-	list data;
-	listContainer* next;
-};
+using namespace std;
 
-struct deckContainer
+struct container
 {
-	deck data;
-	deckContainer* next;
-};
-
-struct stackContainer
-{
-	stack data;
-	stackContainer* next;
+	queue* data;
+	container* next;
 };
 
 class keeper
 {
 private:
-	listContainer* headList;
-
-	deckContainer* headDeck;
-
-	stackContainer* headStack;
-
-	listContainer* tailList;
-
-	deckContainer* tailDeck;
-
-	stackContainer* tailStack;
+	container* tail;
+	container* head;
 
 public:
 	keeper();
 
+	keeper(fstream& f);
+
 	~keeper();
 
-	void push(list _data);
+	void operator+(queue* _data);
 
-	void push(stack _data);
+	void operator-(container* aim);
 
-	void push(deck _data);
+	container* getHead();
 
-	void popList(listContainer* aim);
+	container* getTail();
 
-	void popStack(stackContainer* aim);
+	void setHead(container* newHead);
 
-	void popDeck(deckContainer* aim);
+	void setTail(container* newTail);
 
-	listContainer* getHeadList();
+	container* selectElem(int index);
 
-	deckContainer* getHeadDeck();
+	void writeContainer();
 
-	stackContainer* getHeadStack();
-
-	listContainer* getTailList();
-
-	deckContainer* getTailDeck();
-
-	stackContainer* getTailStack();
-
-	listContainer* selectElemList(int index);
-
-	deckContainer* selectElemDeck(int index);
-
-	stackContainer* selectElemStack(int index);
-
-	void setHeadList(listContainer* head);
-
-	void setHeadDeck(deckContainer* head);
-
-	void setHeadStack(stackContainer* head);
-
-	void setTailList(listContainer* tail);
-
-	void setTailDeck(deckContainer* tail);
-
-	void setTailStack(stackContainer* tail);
-
-	void writeContainer(deckContainer* deckptr);
-
-	void writeContainer(stackContainer* stackptr);
-
-	void writeContainer(listContainer* listptr);
+	void printContainer();
 };

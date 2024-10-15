@@ -22,7 +22,7 @@ stack::stack(int n)
 	{
 		Node* newNode = new Node;
 
-		if (getTail() == nullptr) 
+		if (getTail() == nullptr)
 		{
 			setTail(newNode);
 			setHead(newNode);
@@ -48,7 +48,7 @@ stack::stack(stack& other)
 		Node* newNode = new Node;
 		newNode->data = temp->data;
 
-		if (other.getTail() == other.getHead()) 
+		if (other.getTail() == other.getHead())
 		{
 			setTail(newNode);
 			setHead(newNode);
@@ -75,6 +75,51 @@ stack::~stack()
 	setHead(nullptr);
 }
 
+Node* stack::getHead()
+{
+	return head;
+}
+
+void stack::setHead(Node* a)
+{
+	head = a;
+}
+
+Node* stack::getTail()
+{
+	return tail;
+}
+
+void stack::setTail(Node* a)
+{
+	tail = a;
+}
+
+void stack::writeToFile(fstream& fileDatabase)
+{
+	Node* temp = head;
+	fileDatabase << "s ";
+	while (temp != nullptr)
+	{
+		fileDatabase << temp->data;
+		if (temp != tail) fileDatabase << " ";
+		temp = temp->next;
+	}
+	fileDatabase << '\n';
+}
+
+void stack::printData()
+{
+	cout << "Stack - ";
+	Node* temp = head;
+	while (temp != nullptr)
+	{
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl << endl;
+}
+
 void stack::push(int _data)
 {
 	Node* newNode = new Node;
@@ -84,11 +129,13 @@ void stack::push(int _data)
 		setTail(newNode);
 		setHead(newNode);
 		newNode->next = nullptr;
+		cout << endl << "Element has sucessfully pushed to the stack" << endl << endl;
 		return;
 	}
 
 	newNode->next = getHead();
 	setHead(newNode);
+	cout << endl << "Element has sucessfully pushed to the stack" << endl << endl;
 }
 
 void stack::pop()

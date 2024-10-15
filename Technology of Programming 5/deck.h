@@ -1,7 +1,7 @@
 #pragma once
 #include "base.h"
 
-class deck: public queue
+class deck : public queue
 {
 public:
 	deck();
@@ -12,11 +12,19 @@ public:
 
 	~deck();
 
-	void pushFront(int _data);
+	Node* getHead() override;
 
-	void popFront();
+	Node* getTail() override;
 
-	void pushBack(int _data);
+	void setHead(Node* a) override;
 
-	void popBack();
+	void setTail(Node* a) override;
+
+	void printData() override;
+
+	void push(int data) override;
+
+	void pop() override;
+
+	void writeToFile(fstream& fileDatabase) override;
 };

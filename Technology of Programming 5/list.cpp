@@ -72,8 +72,44 @@ list::~list()
 	setHead(nullptr);
 }
 
-void list::push(int _data, int index)
+Node* list::getHead()
 {
+	return head;
+}
+
+void list::setHead(Node* a)
+{
+	head = a;
+}
+
+Node* list::getTail()
+{
+	return tail;
+}
+
+void list::setTail(Node* a)
+{
+	tail = a;
+}
+
+void list::printData()
+{
+	cout << "List - ";
+	Node* temp = head;
+	while (temp != nullptr)
+	{
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << endl << endl;
+}
+
+void list::push(int data)
+{
+	cout << endl << "Write an index that you want push to: ";
+	int index;
+	cin >> index;
+
 	if (index < 0)
 	{
 		cout << "Incorrect index" << endl << endl;
@@ -81,12 +117,13 @@ void list::push(int _data, int index)
 	}
 
 	Node* newNode = new Node;
-	newNode->data = _data;
+	newNode->data = data;
 
 	if (getTail() == nullptr) {
 		setTail(newNode);
 		setHead(newNode);
 		newNode->next = nullptr;
+		cout << endl << "Element has sucessfully pushed to the list by index" << endl << endl;
 		return;
 	}
 
@@ -94,6 +131,7 @@ void list::push(int _data, int index)
 	{
 		newNode->next = getHead();
 		setHead(newNode);
+		cout << endl << "Element has sucessfully pushed to the list by index" << endl << endl;
 		return;
 	}
 
@@ -111,11 +149,12 @@ void list::push(int _data, int index)
 		newNode->next = nullptr;
 		getTail()->next = newNode;
 		setTail(newNode);
+		cout << endl << "Element has sucessfully pushed to the list by index" << endl << endl;
 		return;
 	}
 
 	temp = getHead();
-	
+
 	for (int i = 0; i < index; i++)
 	{
 		tempPrev = temp;
@@ -124,10 +163,28 @@ void list::push(int _data, int index)
 
 	tempPrev->next = newNode;
 	newNode->next = temp;
+	cout << endl << "Element has sucessfully pushed to the list by index" << endl << endl;
 }
 
-void list::pop(int index)
+void list::writeToFile(fstream& fileDatabase)
 {
+	Node* temp = head;
+	fileDatabase << "l ";
+	while (temp != nullptr)
+	{
+		fileDatabase << temp->data;
+		if (temp != tail) fileDatabase << " ";
+		temp = temp->next;
+	}
+	fileDatabase << '\n';
+}
+
+void list::pop()
+{
+	cout << "Write an index that you want pop by" << endl << endl;
+	int index;
+	cin >> index;
+
 	if (index < 0)
 	{
 		cout << "\nIncorrect index" << endl << endl;

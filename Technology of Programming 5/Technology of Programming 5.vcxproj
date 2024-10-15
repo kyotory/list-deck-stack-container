@@ -127,7 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="base.cpp" />
     <ClCompile Include="deck.cpp" />
     <ClCompile Include="deck.h" />
     <ClCompile Include="keeper.cpp" />
@@ -142,9 +141,7 @@
     <ClInclude Include="stack.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="deck.txt" />
-    <Text Include="list.txt" />
-    <Text Include="stack.txt" />
+    <Text Include="database.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

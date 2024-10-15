@@ -1,4 +1,7 @@
 #pragma once
+#include <fstream>
+
+using namespace std;
 
 struct Node
 {
@@ -8,18 +11,24 @@ struct Node
 
 class queue
 {
-private:
+protected:
 	Node* head;
 	Node* tail;
 
 public:
-	Node* getHead();
+	virtual Node* getHead() = 0;
 
-	void setHead(Node* a);
+	virtual Node* getTail() = 0;
 
-	Node* getTail();
+	virtual void setHead(Node* a) = 0;
 
-	void setTail(Node* a);
+	virtual void setTail(Node* a) = 0;
 
-	void printData();
+	virtual void printData() = 0;
+
+	virtual void pop() = 0;
+
+	virtual void push(int data) = 0;
+
+	virtual void writeToFile(fstream& fileDatabase) = 0;
 };

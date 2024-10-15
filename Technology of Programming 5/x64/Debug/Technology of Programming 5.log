@@ -1,5 +1,4 @@
-﻿  base.cpp
-  deck.cpp
+﻿  deck.cpp
   deck.h
   keeper.cpp
   list.cpp
