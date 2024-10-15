@@ -1,9 +1,2 @@
-﻿  deck.cpp
-  deck.h
-  keeper.cpp
-  list.cpp
-  main.cpp
-  stack.cpp
-  Создание кода...
-x64\Debug\deck.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
+﻿  main.cpp
   Technology of Programming 5.vcxproj -> C:\Users\slava\source\repos\Technology of Programming 5\x64\Debug\Technology of Programming 5.exe

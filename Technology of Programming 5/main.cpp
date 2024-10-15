@@ -17,7 +17,7 @@ static void mainMenu()
 
 static void structureMenu()
 {
-	cout << "Actions with the deck:\n\n" << endl;
+	cout << "Actions:\n\n" << endl;
 	cout << "1 - Push the element\n\n" << endl;
 	cout << "2 - Pop the element\n\n" << endl;
 	cout << "3 - Print the structure\n\n" << endl;
