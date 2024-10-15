@@ -7,20 +7,20 @@
       "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\database.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\database.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\database.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\database.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|solutionrelative:Technology of Programming 5\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59F8C5FD-2EAB-4943-A1FA-EEA789B7E784}|Technology of Programming 5\\Technology of Programming 5.vcxproj|C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\stack.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -54,15 +54,29 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "list.cpp",
+              "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\list.cpp",
+              "RelativeDocumentMoniker": "Technology of Programming 5\\list.cpp",
+              "ToolTip": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\list.cpp",
+              "RelativeToolTip": "Technology of Programming 5\\list.cpp",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAkwI4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-10-15T09:28:18.566Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "database.txt",
               "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\database.txt",
               "RelativeDocumentMoniker": "Technology of Programming 5\\database.txt",
@@ -75,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "list.h",
               "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\list.h",
               "RelativeDocumentMoniker": "Technology of Programming 5\\list.h",
@@ -83,24 +97,12 @@
               "RelativeToolTip": "Technology of Programming 5\\list.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-15T09:28:17.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "list.cpp",
-              "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\list.cpp",
-              "RelativeDocumentMoniker": "Technology of Programming 5\\list.cpp",
-              "ToolTip": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\list.cpp",
-              "RelativeToolTip": "Technology of Programming 5\\list.cpp",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAAPsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-15T09:28:18.566Z",
+              "WhenOpened": "2024-10-15T09:28:17.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "stack.h",
               "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\stack.h",
               "RelativeDocumentMoniker": "Technology of Programming 5\\stack.h",
@@ -108,7 +110,8 @@
               "RelativeToolTip": "Technology of Programming 5\\stack.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-15T09:28:09.786Z"
+              "WhenOpened": "2024-10-15T09:28:09.786Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -184,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\slava\\source\\repos\\Technology of Programming 5\\Technology of Programming 5\\main.cpp",
               "RelativeDocumentMoniker": "Technology of Programming 5\\main.cpp",

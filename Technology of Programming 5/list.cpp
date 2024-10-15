@@ -144,7 +144,7 @@ void list::push(int data)
 		temp = temp->next;
 	}
 
-	if (index > cnt)
+	if (index >= cnt)
 	{
 		newNode->next = nullptr;
 		getTail()->next = newNode;

@@ -1,2 +1,4 @@
-﻿  main.cpp
+﻿  list.cpp
+  LINK : не найден или не выполнена сборка C:\Users\slava\source\repos\Technology of Programming 5\x64\Debug\Technology of Programming 5.exe при последней инкрементной компоновке; выполняется полная компоновка
+x64\Debug\deck.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
   Technology of Programming 5.vcxproj -> C:\Users\slava\source\repos\Technology of Programming 5\x64\Debug\Technology of Programming 5.exe
